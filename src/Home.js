@@ -20,8 +20,8 @@ function Home() {
           />
 
           <Product
-            id="5"
-            title="Sunfeast Dark Fantasy Choco Fills Cream Filled  (300 g)"
+            id="2"
+            title="Sunfeast Dark Fantasy Choco Fills  (300 g)"
             price={500.99}
             rating={5}
             image="https://rukminim1.flixcart.com/image/280/280/l0tweq80/cookie-biscuit/6/d/v/-original-imagcj64ufcuhukb.jpeg?q=70"
@@ -30,7 +30,7 @@ function Home() {
 
 
           <Product
-            id="2"
+            id="3"
             title="Dukes Kaju Kukkies with real taste of Kaju Cookies  (400 g)"
             price={45}
             rating={4}
@@ -49,7 +49,7 @@ function Home() {
           />
 
           <Product
-            id="3"
+            id="5"
             title="INDIA GATE Feast Rozzana Basmati Rice"
             price={107}
             rating={3}
