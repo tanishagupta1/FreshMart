@@ -3,14 +3,15 @@ import Header from './Header'
 import Home from './Home'
 import Checkout from './Checkout'
 import Login from './Login';
+import Payment from './Payment';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect } from 'react';
 import { auth } from "./firebase"
-import {useStateValue} from './StateProvider'
+import { useStateValue } from './StateProvider'
 
 function App() {
 
-const [{},dispatch] = useStateValue();
+  const [{ }, dispatch] = useStateValue();
 
   useEffect(() => {
     //this will run only once when the app is loaded
@@ -20,16 +21,16 @@ const [{},dispatch] = useStateValue();
       if (authUser) {
         //The user is logged in / was logged in
 
-         dispatch({
-          type:'SET_USER',
-          user:authUser
-         })
+        dispatch({
+          type: 'SET_USER',
+          user: authUser
+        })
       }
       else {
         //logged out
         dispatch({
-          type:'SET_USER',
-          user:null
+          type: 'SET_USER',
+          user: null
         })
       }
 
@@ -44,6 +45,7 @@ const [{},dispatch] = useStateValue();
           <Route path="/" element={<><Header /><Home /></>} />
           <Route path="/checkout" element={<><Header /><Checkout /></>} />
           <Route path="/login" element={<><Login /></>} />
+          <Route path="/payment" element={<><Header /><Payment /></>} />
         </Routes>
       </div>
     </BrowserRouter>
