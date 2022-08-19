@@ -11,7 +11,7 @@ import { useStateValue } from './StateProvider'
 
 function App() {
 
-  const [{ }, dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
     //this will run only once when the app is loaded
